@@ -347,7 +347,7 @@
     userMessageContent.push({ type: "text", text: textContent });
 
     try {
-      var response = await fetch("https://core-noisy-beast.helen-36c.workers.dev/", {
+      var response = await (fetch("/api/claude", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
