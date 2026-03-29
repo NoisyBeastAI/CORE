@@ -347,7 +347,7 @@
     userMessageContent.push({ type: "text", text: textContent });
 
     try {
-      var response = await (fetch"/api/claude", {
+      var response = await fetch("/api/claude", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
